@@ -10,7 +10,6 @@ public class Main {
 		router.GET().route("/blog/{id}").with(Controller.class, "show");
 		
 		Server server = Server.create("main", router);
-		
 		MonitoringServer monitoringServer = MonitoringServer.create(server);
 		
 		server.start();
